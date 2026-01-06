@@ -1,0 +1,3 @@
+print("Syntex ON TOP") 
+
+loadstring(game:HttpGet('https://bitbucket.org/projects_early26/new/raw/61fd49b31b84dd26f43e6fed5abe4dfb78a6c4cc/v1.2.4.lua'))()
