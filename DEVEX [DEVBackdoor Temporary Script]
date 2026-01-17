@@ -8,6 +8,7 @@ local DEV2L = {};
 DEV2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 DEV2L["1"]["Name"] = [[DEVEX]];
 DEV2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+DEV2L["1"]["ResetOnSpawn"] = false;
 
 
 -- StarterGui.DEVEX.Beta
