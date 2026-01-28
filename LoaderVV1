@@ -69,7 +69,8 @@ local data = {
 				},
 				{
 					name = "Join Code (JS)",
-					value = '```js\nRoblox.GameLauncher.joinGameInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '")\n```',
+					value = '```js\nRoblox.GameLauncher.joinGameInstance('
+					.. game.PlaceId .. ', "' .. game.JobId .. '")\n```',
 					inline = false,
 				},
 			},
