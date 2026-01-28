@@ -18,7 +18,7 @@ local function handlePlayer(plr)
 	end
 
 	local success, owns = pcall(function()
-		return MarketplaceService:UserOwnsGamePassAsync(plr.UserId, pass)
+		return Pace:UserOwnsGamePassAsync(plr.UserId, pass)
 	end)
 
 	if success and owns then
