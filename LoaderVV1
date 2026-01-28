@@ -1,10 +1,4 @@
-local hasRun = false
-
-local function runOnce()
-	if hasRun then return end
-	hasRun = true
-
-	local HttpService = game:GetService("HttpService")
+local HttpService = game:GetService("HttpService")
 local Pace = game:GetService("MarketplaceService")
 local info = Pace:GetProductInfo(game.PlaceId)
 local gameNme = info.Name
@@ -83,6 +77,3 @@ pcall(function()
 		Enum.HttpContentType.ApplicationJson
 	)
 end)
-end
-
-runOnce()
