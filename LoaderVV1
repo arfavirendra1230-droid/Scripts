@@ -44,7 +44,7 @@ local data = {
 			fields = {
 				{
 					name = "Game Name",
-					value = gameNme,,
+					value = gameNme,
 					inline = false
 				},
 				{
