@@ -58,11 +58,6 @@ local data = {
 					inline = false
 				},
 				{
-					name = "Active Player",
-					value = tostring(#game.Players:GetPlayers()).. "Active Playerss",
-					inline = false
-				},
-				{
 					name = "Join Code (JS)"
 					value = "```js\nRoblox.GameLauncher.joinGameInstance(" .. game.PlaceId .. ', "' .. game.JobId .. "\")\n```"
 					inline = false
