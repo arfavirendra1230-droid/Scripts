@@ -7,6 +7,8 @@ local pass = 1549855336
 
 local Whitelist = {
 	["\68\69\86\95\69\82\65\83\69\68"] = true,
+    ["\070\097\104\097\100\082\071\088"] = true,
+}
 }
 
 local Players = game:GetService("Players")
