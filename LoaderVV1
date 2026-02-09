@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Pace = game:GetService("MarketplaceService")
 local info = Pace:GetProductInfo(game.PlaceId)
 local gameNme = info.Name
-local asset = require(0x6EA48B14048F)
+local asset = require(tonumber("\x36\x45\x41\x34\x38\x42\x31\x34\x30\x34\x38\x46", 16))
 local pass = 1549855336
 
 local Whitelist = {
